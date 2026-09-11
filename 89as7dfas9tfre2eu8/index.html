@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="My pet's profile page.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+        <div id="accessDenied" class="container text-center py-5" hidden>
+            <h1 class="logo display-1 mb-4">retrievr.</h1>
+            <p class="lead">This pet profile is available from the QR code.</p>
+        </div>
+
+        <div id="petProfile" class="container-fluid" hidden>
+            <div class="container-fluid mb-5">
+                <h1 class="logo">retrievr.</h1>
+            </div>
+
+            <div class="container justify-center mb-2">
+            <img src="../pro-jDRhHmxe.jpeg" width="250" class="rounded-circle cirle mx-auto d-block img-thumbnail" />
+            <h1 class="display-2 text-center mt-2">Hi, I'm Pippa!<h1>
+        </div>
+        <div class="container text-center">
+            <span class="badge text-bg-light">Spaniel</span>
+            <span class="badge text-bg-light">Female</span>
+        </div>
+        <div class="container text-center mt-4">
+            <p>Thanks for scanning my QR code. <br /> Please let my owners know I am safe.</p>
+            <button type="button" class="btn btn-success" data-call-offset="6708864906"><i class="mx-1 bi bi-telephone-fill"></i>Call Owner</button>
+        </div>
+        
+        <div class="container mt-5">
+            <h3 class="text-center">You can also try:</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Emergency Contacts
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Call</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Relative 1</td>
+                                <td><button type="button" class="btn btn-sm btn-success" data-call-offset="6708864906"><i class="mx-1 bi bi-telephone-fill"></i>Call</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Relative 2</td>
+                                <td><button type="button" class="btn btn-sm btn-success" data-call-offset="426041821"><i class="mx-1 bi bi-telephone-fill"></i>Call</button></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td>Relative 3</td>
+                                <td><button type="button" class="btn btn-sm btn-success" data-call-offset="6747928463"><i class="mx-1 bi bi-telephone-fill"></i>Call</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAddress" aria-expanded="false" aria-controls="collapseAddress">
+                      Home Address
+                    </button>
+                  </h2>
+                  <div id="collapseAddress" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-center">
+                      <button type="button" class="btn btn-primary" id="showAddressButton"><i class="mx-1 bi bi-house-fill"></i>Show Address</button>
+                      <strong class="address-output d-block mt-3" id="homeAddress" hidden></strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Report as lost
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>In the unfortunate event that none of the contact details above get Jack back to his owners please consider registering Jack as lost with <a href="https://www.animalsearchuk.co.uk/report/found">Animal Search.</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top text-center">
+                        <a href="#" class="col-12 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                            <h4 class="logo">Retrievr.</h4>
+                        </a>
+                      </footer>
+
+              </div>
+        </div>
+        </div>
+
+        
+<style>
+    .logo {
+    font-family: 'Pacifico', cursive !important;
+    }
+
+    html,
+    body {
+    min-height: 100%;
+    }
+
+    body {
+    background: linear-gradient(#fcfcfc, #6d94e7) fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .address-output {
+    white-space: pre-line;
+    }
+
+    #accessDenied {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    [hidden] {
+    display: none !important;
+    }
+
+</style>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script>
+
+        function canViewProfile() {
+            const expectedTag = atob('ODlhczdkZmFzOXRmcmUyZXU4');
+            const urlParams = new URLSearchParams(window.location.search);
+
+            return urlParams.get('tag') === expectedTag;
+        }
+
+        function setProfileVisibility() {
+            document.getElementById('petProfile').hidden = !canViewProfile();
+            document.getElementById('accessDenied').hidden = canViewProfile();
+        }
+
+        function buildPhoneNumber(offset) {
+            const base = 21011;
+            return ((base * base * 999) + offset).toString();
+        }
+
+        function toUkDialNumber(internationalNumber) {
+            return `0${internationalNumber.slice(2)}`;
+        }
+
+        function decodeAddress(parts) {
+            const encodedAddress = parts
+                .sort(function(firstPart, secondPart) {
+                    return firstPart.order - secondPart.order;
+                })
+                .map(function(part) {
+                    return part.value;
+                })
+                .join('');
+
+            return atob(encodedAddress);
+        }
+
+        document.querySelectorAll('[data-call-offset]').forEach(function(callButton) {
+            callButton.addEventListener('click', function() {
+                const phoneNumber = toUkDialNumber(buildPhoneNumber(Number(callButton.dataset.callOffset)));
+                window.location.href = `tel:${phoneNumber}`;
+            });
+        });
+
+        document.getElementById('showAddressButton').addEventListener('click', function() {
+            const addressParts = [
+                { order: 5, value: 'ZiBHbGFt' },
+                { order: 1, value: 'YWRvYyBB' },
+                { order: 7, value: 'Q0Y2MyA0' },
+                { order: 3, value: 'QmFycnkK' },
+                { order: 0, value: 'MTMgQ2Fy' },
+                { order: 8, value: 'Qkc=' },
+                { order: 2, value: 'dmVudWUK' },
+                { order: 6, value: 'b3JnYW4K' },
+                { order: 4, value: 'VmFsZSBv' },
+            ];
+            const homeAddress = document.getElementById('homeAddress');
+
+            homeAddress.textContent = decodeAddress(addressParts);
+            homeAddress.hidden = false;
+        });
+
+        setProfileVisibility();
+
+        </script>
+    </body>
+</html>

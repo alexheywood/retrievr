@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Retrievr</title>
+        <meta name="description" content="Retrievr is coming soon.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noindex, nofollow">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <style>
+            :root {
+                color-scheme: light;
+            }
+
+            body {
+                min-height: 100vh;
+                margin: 0;
+                background:
+                    linear-gradient(rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.94)),
+                    url("./logo-transparent.png") center 20% / min(70vw, 520px) no-repeat,
+                    linear-gradient(160deg, #eef7f4 0%, #d8e8ff 48%, #f7f4e8 100%);
+                color: #162023;
+            }
+
+            main {
+                min-height: 100vh;
+                display: grid;
+                place-items: center;
+                padding: 2rem;
+            }
+
+            .logo {
+                font-family: 'Pacifico', cursive;
+            }
+
+            .coming-soon {
+                width: min(100%, 34rem);
+                text-align: center;
+            }
+
+            .coming-soon h1 {
+                font-size: clamp(4rem, 18vw, 8rem);
+                line-height: 0.95;
+            }
+
+            .coming-soon p {
+                color: #415057;
+                font-size: 1.2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section class="coming-soon" aria-labelledby="pageTitle">
+                <h1 class="logo mb-4" id="pageTitle">retrievr.</h1>
+                <p class="mb-4">Pet profile pages for quick reunions.</p>
+                <button type="button" class="btn btn-success btn-lg" disabled><i class="bi bi-qr-code-scan me-2"></i>Sign up soon</button>
+            </section>
+        </main>
+    </body>
+</html>
